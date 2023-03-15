@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Online Mobile Store</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Londrina+Solid|Coda+Caption:800|Open+Sans' rel='stylesheet' type='text/css'>
+		<script language="javascript">
+$(document).ready(function(){
+ $('#register').submit(function() {
+   
+ if($('#password').val() != $('#cpassword').val()){
+ 	alert("Please re-enter confirm password");
+ 	$('#cpassword').val('');
+ 	$('#cpassword').focus();
+ 	return false;
+	}
+	});
+	return false;
+    });
+
+
+     function clear_form()
+     {
+        $("#fname").val('');
+        $("#email").val('');
+        $("#phone").val('');
+        $("#username").val('');
+        $("#password").val('');
+        $("#cpassword").val('');
+     }
+
+
+});
+
+</script>
+	</head>
+	<body>
+		<div class="wrap">
+		<!----start-Header---->
+		<div class="header">
+			<div class="search-bar">
+				<form>
+					<input type="text"><input type="submit" value="Search" />
+				</form>
+			</div>
+			<div class="clear"> </div>
+			<div class="header-top-nav">
+				<ul>
+					<li><a href="index.php">Login</a></li>
+					<li><a href="#">Develivery</a></li>
+					<li><a href="#">Checkout</a></li>
+					<li><a href="#">My Account</a></li>
+					<li><a href="#"><span>Shopping Cart&nbsp;&nbsp;: </span></a><lable> &nbsp;No Items</lable></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		</div>
+		<div class="clear"> </div>
+		<div class="top-header">
+			<div class="wrap">
+		<!----start-logo---->
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" title="logo" /></a>
+			</div>
+		<!----end-logo---->
+		<!----start-top-nav---->
+		<div class="top-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="store.html">Store</a></li>
+				
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="clear"> </div>
+		</div>
+		</div>
+		<!----End-top-nav---->
+		<!----End-Header---->
+		    <div class="clear"> </div>
+		    <div class="wrap">
+		    <div class="content">
+		    	<div class="section group">				
+				<div class="col span_1_of_3">
+					
+      			<div class="company_address">
+				     	<h2>Group Members:-</h2>
+						    	<p>Dinesh Kumar</p>
+						   		<p>Govind Patidar</p>
+								<p>Bablu Rathore</p>
+								<p>Ankit Soni</p>
+				   		<p>Phone:(+91) 9565386679</p>
+				 	 	<p>Email: <span>patidar.govind.794@gmail.com</span></p>
+				   		<p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+				   </div>
+				</div>				
+					<div class="col span_2_of_3">
+					  <form action="contact.php" method="POST" action="null"  >	
+							<br><br>
+							<h3>Contact Us</h3>
+							<br>
+				<label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" placeholder="First Name" id="fname" name="name" required="required"><br><br>
+		
+				<label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="email" placeholder="Email Address" id="email" name="email" required="required"><br><br>
+		
+				<label for="mobile">Mobile No:</label> &nbsp;
+            		<input type="text" placeholder="Phone Number" id="phone" name="mobile"> <br><br>
+					
+				<label for="feedback">Feedback:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input id="feedback" name="feed" placeholder="Feedback" required="" type="text"><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="otherinputs" ><input type="submit" value="Submit" name="submit" name="B1" class="submit"> &nbsp; &nbsp;<input type="reset" value="Reset" name="B2" class="submit"></div>
+				</form>				
+			  </div>
+			  <div class="clear"> </div>
+	</div>
+	<div class="clear"> </div>
+		    </div>
+		    </div>
+		<div class="footer">
+			<div class="clear"> </div>
+		    </div>
+		</div>
+		</div>
+	</body>
+</html>
+
